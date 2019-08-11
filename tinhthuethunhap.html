@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tien = parseInt(prompt("nhap tien luong:"));
+    let thue ;
+    if(tien<=5000000 && tien>0 ){
+        thue = tien*0.05;
+        document.write("thue :" + thue);
+    }else if(tien>5000000 && tien <= 10000000){
+        thue = tien*0.1;
+        document.write("thue:" + thue);
+    }else if(tien>10000000){
+        thue = tien*0.15;
+        document.write("thue:" + thue);
+    }
+</script>
+</body>
+</html>

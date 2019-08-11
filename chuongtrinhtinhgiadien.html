@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh tien dien</title>
+</head>
+<body>
+<script>
+    let tien;
+    let nhap = parseInt(prompt("nhap so kwh de tinh tien dien"));
+    if(nhap <= 50){
+        tien = nhap*1.678;
+        document.write("so tien dien can tra : "+tien);
+    }else if(nhap>=51 && nhap <=100){
+        tien = nhap*1.734;
+        document.write("so  tien dien can tra : "+tien);
+    }else if(nhap>100){
+        tien = nhap*2.927;
+        document.write("so tien dien can tra : "+tien);
+    }
+</script>
+</body>
+</html>

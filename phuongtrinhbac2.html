@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinhbac2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap a:"));
+    let b = parseInt(prompt("nhap b:"));
+    let c = parseInt(prompt("nhap c:"));
+    let delta = ((b*b - 4*a*c)/(a*a));
+    let x1 =0;
+    let x2=0;
+    if(delta>0){
+        x1 = (-b+Math.sqrt(delta))/(4*a);
+        x2 = (-b-Math.sqrt(delta))/(4*a);
+        document.write("pt co 2 nghiem x1 :" + x1 +" x2 : "+ x2);
+    }else if(delta < 0){
+        document.write("phuong trinh vo nghiem" );
+    }else if(delta =0){
+        x1 = -b/(2*a);
+        x2 = x1;
+        document.write("pt co 2 nghiem giong nhau:"+x2);
+    }
+</script>
+</body>
+</html>

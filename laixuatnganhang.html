@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cash = parseInt(prompt("nhap so tien gui:"));
+    let thang = parseInt(prompt(("nhap so thang gui")));
+    if(thang<=6){
+        cash = cash * 1.017;
+    }else if(thang>6 && thang<=12){
+        cash =  cash * 1.03;
+    }else if(thang > 12){
+        cash = cash*1.015;
+    }
+    document.write(cash);
+</script>
+</body>
+</html>
